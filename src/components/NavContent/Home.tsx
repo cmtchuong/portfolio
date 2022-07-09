@@ -1,0 +1,68 @@
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
+
+const Home: React.FC = () => {
+  const el = useRef(null);
+  // Create reference to store the Typed instance itself
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Software Engineer",
+        "Web Developer",
+        "Designer",
+        "Freelancer",
+      ],
+      typeSpeed: 40,
+      backSpeed: 40,
+      loop: true,
+      cursorChar: '_',
+    };
+
+    // elRef refers to the rendered below
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      // Make sure to destroy Typed instance during cleanup
+      // to prevent memory leaks
+      typed?.current?.destroy();
+    };
+  }, []);
+
+  return (
+    <section className=" bg-blue-100 min-h-[100vh] fixed xl:left-[300px] left-0 top-0 right-0 xl:px-[10%] px-[40px] py-[10%] flex animate">
+      <div className="space-y-2 max-w-[600px] px-4">
+        <h1 className="text-2xl font-semibold flex flex-col lg:flex-row">
+          <span className="lg:self-center mr-3">Hello, my name is </span>
+          <img
+            src="https://media.discordapp.net/attachments/890493745982767111/994972023161880656/signature.png"
+            className="w-[200px] h-[100px]"
+          ></img>
+        </h1>
+        <div className="">
+          <h2 className="text-xl font-semibold">I am working as</h2>
+          <div className="type-wrap">
+            <span className="text-3xl font-semibold font__mont" style={{ whiteSpace: "pre" }} ref={el} />
+          </div>
+        </div>
+
+        <p className="text-black font-[550] text-lg py-8 ">
+          A young and enthusiastic developer who always look for new challenge
+          everyday. Currently pushing more in Front-End and also try new things
+          like Back-End or DevOps stuff...
+        </p>
+      </div>
+
+      <div className="profile md:block relative p-10 hidden flex-grow ">
+        <img
+          src={
+            "https://cdn.discordapp.com/attachments/890493745982767111/994939908244394014/IMG_20180206_121342_303-removebg-preview.png"
+          }
+          className="profile__image mt-12"
+        />
+      </div>
+    </section>
+  );
+};
+export default Home;

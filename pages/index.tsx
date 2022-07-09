@@ -1,16 +1,204 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Head from "next/head";
+import "tailwind.config";
+import Image from "next/image";
+import "tailwind.config";
+import {
+  HomeIcon,
+  UserIcon,
+  DesktopComputerIcon,
+  ChatAlt2Icon,
+  BriefcaseIcon,
+} from "@heroicons/react/solid";
+import "font-awesome/css/font-awesome.min.css";
 
-import { Container, Header, Main, Footer, Cards } from "@components";
 
-const Home: React.FC = () => {
+
+import { MenuIcon } from "@heroicons/react/outline";
+
+import { Container } from "@components";
+import Home from "@components/NavContent/Home";
+import AboutMe from "@components/NavContent/AboutMe";
+import Services from "@components/NavContent/Services";
+import Portfolios from "@components/NavContent/Portfolio";
+import Contact from "@components/NavContent/Contact";
+
+const Portfolio: React.FC = () => {
+  const [nav, setNav] = useState("Home");
+
+ 
+
   return (
     <Container>
-      <Header />
-      <Main />
-      <Cards />
-      <Footer />
+      <Head>
+        <title>Mtiezz Space</title>
+        <link
+          rel="icon"
+          href="https://media.discordapp.net/attachments/890493745982767111/994877103860371476/unknown.png"
+          type="image/x-icon"
+        ></link>
+      </Head>
+
+      <div className="flex">
+        {/* Navbar */}
+        <div className="sideNav bg-gray-100 w-[300px] h-full fixed top-0 left-0 pl-[40px] pb-[30px] justify-center items-center z-10 xl:block hidden border-r-2">
+          <Image
+            src={
+              "https://media.discordapp.net/attachments/890493745982767111/994649389849137212/logocmt-removebg-preview.png"
+            }
+            alt="Mtiezz Space Logo"
+            width={210}
+            height={210}
+          ></Image>
+
+          <ul className="mt-[50px] space-y-[20px] block nav ">
+            <div
+              onClick={() => {
+                setNav("Home");
+              }}
+            >
+              {nav === "Home" ? (
+                <li className="active cursor-pointer">
+                  <a href="#">
+                    <HomeIcon className="w-6 h-6 mr-3" />
+                    Home
+                  </a>
+                </li>
+              ) : (
+                <li className="cursor-pointer">
+                  <a href="#">
+                    <HomeIcon className="w-6 h-6 mr-3" />
+                    Home
+                  </a>{" "}
+                </li>
+              )}
+            </div>
+
+            <div
+              onClick={() => {
+                setNav("AboutMe");
+              }}
+            >
+              {nav === "AboutMe" ? (
+                <li className="active cursor-pointer">
+                  <a href="#">
+                    <UserIcon className="w-6 h-6 mr-3" />
+                    About Me
+                  </a>
+                </li>
+              ) : (
+                <li className="cursor-pointer">
+                  <a href="#">
+                    <UserIcon className="w-6 h-6 mr-3" />
+                    About Me
+                  </a>{" "}
+                </li>
+              )}
+            </div>
+
+            <div
+              onClick={() => {
+                setNav("Service");
+              }}
+            >
+              {nav === "Service" ? (
+                <li className="active cursor-pointer">
+                  <a href="#">
+                    <DesktopComputerIcon className="w-6 h-6 mr-3" />
+                    Service
+                  </a>
+                </li>
+              ) : (
+                <li className="cursor-pointer">
+                  <a href="#">
+                    <DesktopComputerIcon className="w-6 h-6 mr-3" />
+                    Service
+                  </a>{" "}
+                </li>
+              )}
+            </div>
+
+            <div
+              onClick={() => {
+                setNav("Portfolio");
+              }}
+            >
+              {nav === "Portfolio" ? (
+                <li className="active cursor-pointer">
+                  <a href="#">
+                    <BriefcaseIcon className="w-6 h-6 mr-3" />
+                    Portfolio
+                  </a>
+                </li>
+              ) : (
+                <li className="cursor-pointer">
+                  <a href="#">
+                    <BriefcaseIcon className="w-6 h-6 mr-3" />
+                    Portfolio
+                  </a>{" "}
+                </li>
+              )}
+            </div>
+
+            <div
+              onClick={() => {
+                setNav("Contact");
+              }}
+            >
+              {nav === "Contact" ? (
+                <li className="active cursor-pointer">
+                  <a href="#">
+                    <ChatAlt2Icon className="w-6 h-6 mr-3" />
+                    Contact
+                  </a>
+                </li>
+              ) : (
+                <li className="cursor-pointer">
+                  <a href="#">
+                    <ChatAlt2Icon className="w-6 h-6 mr-3" />
+                    Contact
+                  </a>{" "}
+                </li>
+              )}
+            </div>
+          </ul>
+
+          <div className="py-6 ">
+            <ul className="flex absolute contact__icon left-[22px]">
+              <li>
+                <a href="https://www.facebook.com/cmtchuong/" className=""  target="_blank">
+                  <i className="fa fa-facebook icon text-center justify-end"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/_cmtiezz" target="_blank">
+                  <i className="fa fa-twitter icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/cmtchuong" target="_blank">
+                  <i className="fa fa-linkedin icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:caochuongto@gmail.com">
+                  <i className="fa fa-envelope icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex-grow">
+          {nav === "Home" && <Home />}
+          {nav === "AboutMe" && <AboutMe />}
+          {nav === "Service" && <Services />}
+          {nav === "Portfolio" && <Portfolios />}
+          {nav === "Contact" && <Contact />}
+        </div>
+      </div>
     </Container>
   );
 };
 
-export default Home;
+export default Portfolio;

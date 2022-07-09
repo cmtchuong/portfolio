@@ -12,20 +12,20 @@ export default function Counter() {
   );
 
   return (
-    <div>
-      <div>
-        <h2>Counter</h2>
-        <button type="button" onClick={() => dispatch(increase())}>
-          +
-        </button>
-        <span>{count}</span>
-        <button type="button" onClick={() => dispatch(decrease())}>
-          -
-        </button>
-      </div>
-      <a href="https://react-redux.js.org/" target="_blank" rel="noreferrer">
-        Go To Documentation
-      </a>
-    </div>
+    // <div>
+    //   <div>
+    //     <h2>Counter</h2>
+    //     <button type="button" onClick={() => dispatch(increase())}>
+    //       +
+    //     </button>
+    //     <span>{count}</span>
+    //     <button type="button" onClick={() => dispatch(decrease())}>
+    //       -
+    //     </button>
+    //   </div>
+    //   <a href="https://react-redux.js.org/" target="_blank" rel="noreferrer">
+    //     Go To Documentation
+    //   </a>
+    // </div>
   );
 }
