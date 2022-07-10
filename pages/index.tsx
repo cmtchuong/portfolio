@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
             height={210}
           ></Image>
 
-          <ul className="mt-[50px] space-y-[20px] block nav ">
+          <ul className="mt-[30px] space-y-[20px] block nav ">
             <div
               onClick={() => {
                 setNav("Home");
@@ -163,7 +163,7 @@ const Portfolio: React.FC = () => {
             </div>
           </ul>
 
-          <div className="py-6 ">
+          <div className=" py-4">
             <ul className="flex absolute contact__icon left-[22px]">
               <li>
                 <a href="https://www.facebook.com/cmtchuong/" className=""  target="_blank">
