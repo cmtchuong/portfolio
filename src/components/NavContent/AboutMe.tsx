@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className=" bg-indigo-100 min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate">
+    <section className=" min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate bg-purple-100">
       <div className="text-center space-y-4">
         <h1 className="font-extrabold text-3xl"> About Me </h1>
         <h2 className="font-semibold text-xl">

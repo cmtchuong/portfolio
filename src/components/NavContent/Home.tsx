@@ -31,7 +31,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <section className=" bg-blue-100 min-h-[100vh] fixed xl:left-[300px] left-0 top-0 right-0 xl:px-[10%] px-[40px] py-[10%] flex animate">
+    <section className=" bg-blue-100 min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] flex animate">
       <div className="space-y-2 max-w-[600px] px-4">
         <h1 className="text-2xl font-semibold flex flex-col lg:flex-row">
           <span className="lg:self-center mr-3 font-bold">Hello, my name is </span>
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
         <div className="">
           <h2 className="text-xl font-semibold">I am working as</h2>
           <div className="type-wrap">
-            <span className="text-3xl font-semibold font__mont text-yellow-700" style={{ whiteSpace: "pre" }} ref={el} />
+            <span className="text-base sm:text-3xl font-semibold font__mont text-yellow-700" style={{ whiteSpace: "pre" }} ref={el} />
           </div>
         </div>
 

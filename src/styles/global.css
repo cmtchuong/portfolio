@@ -112,8 +112,36 @@ li a {
 }
 
 
+.navbar li {
+  overflow: hidden;
+  color: #302e4d;
+  
+  transition: background-color 0.2s ease-out
+
+}
 
 
+
+.navbar li:hover {
+  background-color: #0d112d;
+  color: #FFF;
+
+}
+
+
+.navbar li.active {
+  color: skyblue;
+  background-color: #0d112d;
+}
+
+
+.navbar li a {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  padding: 5px 10px;
+  transition: color 0.15s ease-out 150ms;
+}
 
 
 .main__content section {
@@ -289,4 +317,23 @@ li a {
 
   .job__header:hover::before {
     background: rgb(49 46 129);
+  }
+
+  .service {
+    transition: background-color 0.5s ease-out;
+    transition: border-color 0.2s ease-out;
+  }
+
+  .service:hover {
+    background-color: #ffc700;
+    border-color: #2a9134;
+  }
+
+  .service .service__items {
+    transition: color 0.2s ease-out;
+    color: white;
+  }
+
+  .service:hover .service__items {
+    color: #000;
   }
