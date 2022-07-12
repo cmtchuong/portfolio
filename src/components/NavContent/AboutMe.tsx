@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import { Modal } from "@nextui-org/react";
 
 const AboutMe: React.FC = () => {
+
+  const [visible, setVisible] = useState(false);
+  const handler = () => {
+    setVisible(true);
+  }
+
+  const closeHandler = () => {
+    setVisible(false);
+  }
+
+
+
   return (
     <section className=" min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate bg-purple-100">
       <div className="text-center space-y-4">
@@ -20,7 +33,7 @@ const AboutMe: React.FC = () => {
                   Tô Đoàn Cao Chương
                 </span>
               </h1>
-              <div className=" sm:mr-6">
+              <div className=" sm:mr-6" onClick={handler}>
                 <button className="font-bold resume__button p-3 border-2 border-indigo-500 max-h-[50px] rounded relative z-10 inline-block">
                   Resume
                 </button>
@@ -96,7 +109,7 @@ const AboutMe: React.FC = () => {
             <h2 className="font-semibold text-indigo-700">2021 - Present</h2>
             <p className="text-base font-semibold">
               Improve and make yourself better is never an easy journey, so I
-              decided to take an training course in Front-End as a way to learn
+              decided to take a training course in Front-End as a way to learn
               new more things. After complete the course, I got myself ways to
               improve and where I can self-study. So now I currently learning
               more in Front-End and also having a little Back-End and DevOps to
@@ -128,7 +141,7 @@ const AboutMe: React.FC = () => {
             </h2>
             <p className="text-base font-semibold">
               Since I was in secondary school and highschool, I always handle
-              with most of the Powerpoint presentations in our group or in
+              with most of the Powerpoint presentations in our group or
               class. So I decided to help making design presentations for my
               friends. In 2019, I also participated in MOS Powerpoint and got
               Certificate of Merit.
@@ -183,6 +196,16 @@ const AboutMe: React.FC = () => {
           </div>
         </div>
       </div>
+      <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
+          <Modal.Body>
+            <Image
+              src="/CV.png"
+              alt="meipaly"
+              width={1414}
+              height={2000}
+            />
+          </Modal.Body>
+        </Modal>
     </section>
   );
 };

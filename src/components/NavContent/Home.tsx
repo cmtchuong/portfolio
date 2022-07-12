@@ -38,6 +38,7 @@ const Home: React.FC = () => {
           <img
             src="https://media.discordapp.net/attachments/890493745982767111/994972023161880656/signature.png"
             className="w-[200px] h-[100px]"
+            alt="signature_name"
           ></img>
         </h1>
         <div className="">
@@ -48,7 +49,7 @@ const Home: React.FC = () => {
         </div>
 
         <p className="text-black font-semibold text-lg py-8 leading-10">
-          A young and enthusiastic developer who always look for new challenge
+          A young and enthusiastic developer who always look for new challenges
           everyday. Currently pushing more in Front-End and also try new things
           like Back-End or DevOps stuff...
         </p>
@@ -60,6 +61,7 @@ const Home: React.FC = () => {
             "https://cdn.discordapp.com/attachments/890493745982767111/994939908244394014/IMG_20180206_121342_303-removebg-preview.png"
           }
           className="profile__image mt-12"
+          alt="profile_image"
         />
       </div>
     </section>

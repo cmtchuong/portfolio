@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { Modal, Button, Text, Link, useModal } from "@nextui-org/react";
+import { Modal } from "@nextui-org/react";
 
 const Portfolios: React.FC = () => {
   const [visible, setVisible] = useState(false);

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { CurrencyDollarIcon, DeviceMobileIcon, CursorClickIcon, ServerIcon, UserGroupIcon, CheckCircleIcon } from "@heroicons/react/outline";
 
 const Service: React.FC = () => {

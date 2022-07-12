@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/cmtchuong">
+            <a href="https://github.com/cmtchuong" target="_blank">
               <i className="fa fa-github item"></i>
             </a>
           </li>
@@ -110,6 +110,7 @@ const Contact: React.FC = () => {
           />
         </form>
       </div>
+      
     </section>
   );
 };
