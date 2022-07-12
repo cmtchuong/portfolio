@@ -68,7 +68,7 @@ const AboutMe: React.FC = () => {
         <div className="flex flex-col flex-grow min-w-[200px] border-4 lg:border-l-0 border-indigo-200 shadow-md rounded-r-md">
           <div className="border-b-4 border-indigo-200 p-6 h-2/3">
             <h2 className="font-semibold text-center">Front-End Stack</h2>
-            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6">
+            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9 grid grid-cols-6">
               <Image src="/html.png" alt="html" width={40} height={40} />
 
               <Image src="/css.png" alt="css" width={40} height={40} />
@@ -90,7 +90,7 @@ const AboutMe: React.FC = () => {
 
           <div className="p-6">
             <h2 className="font-semibold text-center">DevOps Stack</h2>
-            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6">
+            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9">
               <Image src="/docker.png" width={40} height={40} />
               <Image src="/k8s.png" width={40} height={40} />
               <Image src="/gcp.png" width={40} height={40} />
