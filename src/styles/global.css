@@ -212,7 +212,6 @@ li a {
   border-radius: 100%;
   position: relative;
   overflow: hidden;
-  border: 3px solid rgb(243 244 246);
   z-index: 1;
   padding-top: 4px;
 }
@@ -320,7 +319,7 @@ li a {
   }
 
   .service {
-    transition: background-color 0.5s ease-out;
+    transition: background-color 1s ease-out;
     transition: border-color 0.2s ease-out;
   }
 
@@ -336,4 +335,100 @@ li a {
 
   .service:hover .service__items {
     color: #000;
+  }
+
+  .flip__card__container {
+    max-width: 1000px;
+    perspective: 1000px;
+  }
+
+  .flip__card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+  .flip__card__container:hover .flip__card {
+    transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+  }
+  /* Position the front and back side */
+  .flip__card__front, .flip__card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0.5rem; */
+  }
+
+  .flip__card__back {
+    color: #fff;
+    transform: rotateY(180deg);
+    border-radius: 8px;
+  }
+  
+  .contact__item li {
+    list-style: none;
+  }
+  
+  .contact__item li a {
+    width: 66px;
+    height: 66px;
+    background-color: rgb(252 231 243);
+    text-align: center;
+    font-size: 35px;
+    display: block !important;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+  }
+  
+  .contact__item li a .item {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .contact__item li a:hover .item {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .contact__item li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .contact__item li a:hover:before {
+    top: 0;
+  }
+  
+  .contact__item li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  .contact__item li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  .contact__item li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  .contact__item li:nth-child(4) a:before {
+    background: #000000;
   }

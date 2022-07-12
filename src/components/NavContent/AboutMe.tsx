@@ -56,22 +56,22 @@ const AboutMe: React.FC = () => {
           <div className="border-b-4 border-indigo-200 p-6 h-2/3">
             <h2 className="font-semibold text-center">Front-End Stack</h2>
             <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6">
-              <Image src="/html.png" width={40} height={40} />
+              <Image src="/html.png" alt="html" width={40} height={40} />
 
-              <Image src="/css.png" width={40} height={40} />
+              <Image src="/css.png" alt="css" width={40} height={40} />
 
-              <Image src="/js.png" width={40} height={40} />
-              <Image src="/sass.png" width={40} height={40} />
+              <Image src="/js.png" alt="js" width={40} height={40} />
+              <Image src="/sass.png" alt="sass" width={40} height={40} />
 
-              <Image src="/bs.png" width={40} height={40} />
+              <Image src="/bs.png" alt="bs" width={40} height={40} />
 
-              <Image src="/reactjs.png" width={40} height={40} />
+              <Image src="/reactjs.png" alt="reactjs" width={40} height={40} />
 
-              <Image src="/nextjs.png" width={40} height={40} />
-              <Image src="/typescript.png" width={40} height={40} />
+              <Image src="/nextjs.png" alt="nextjs" width={40} height={40} />
+              <Image src="/typescript.png" alt="ts" width={40} height={40} />
 
-              <Image src="/react_query.png" width={40} height={40} />
-              <Image src="/tailwind.png" width={40} height={40} />
+              <Image src="/react_query.png" alt="rq" width={40} height={40} />
+              <Image src="/tailwind.png" alt="tailwind" width={40} height={40} />
             </div>
           </div>
 
