@@ -82,6 +82,7 @@ function sendEmail(e: React.FormEvent<HTMLFormElement>) {
             <label className="text-base font-semibold">Name: </label>
             <br></br>
             <input
+              required
               type="text"
               name="user_name"
               className="text-base font-medium bg-pink-100 border-b border-black w-full"
@@ -91,6 +92,7 @@ function sendEmail(e: React.FormEvent<HTMLFormElement>) {
           <div>
             <label className="text-base font-semibold">Email:</label>
             <input
+              required
               type="email"
               name="user_email"
               className="text-base font-medium bg-pink-100 border-b border-black w-full"
@@ -100,6 +102,7 @@ function sendEmail(e: React.FormEvent<HTMLFormElement>) {
           <div>
             <label className="text-base font-semibold">Message:</label>
             <textarea
+              required
               name="message"
               className="text-base font-medium bg-pink-100 border border-black w-full mt-4 p-4"
             />
