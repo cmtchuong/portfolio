@@ -5,7 +5,7 @@ import "font-awesome/css/font-awesome.min.css";
 const Contact: React.FC = () => {
   const form = useRef();
 
-  const sendEmail = (e: { preventDefault: () => void }) => {
+function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     emailjs
@@ -17,12 +17,14 @@ const Contact: React.FC = () => {
       )
       .then(
         (result) => {
-          console.log("success");
+          alert("You have successfully sent your message, Chương will get back to you soon!");
         },
         (error) => {
-          console.log("error");
+          alert("There was an error when sending your message. Please try again.");
         }
       );
+
+      e.currentTarget.reset();
   };
 
   return (
