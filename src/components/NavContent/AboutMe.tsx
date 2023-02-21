@@ -3,17 +3,14 @@ import Image from "next/image";
 import { Modal } from "@nextui-org/react";
 
 const AboutMe: React.FC = () => {
-
   const [visible, setVisible] = useState(false);
   const handler = () => {
     setVisible(true);
-  }
+  };
 
   const closeHandler = () => {
     setVisible(false);
-  }
-
-
+  };
 
   return (
     <section className=" min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate bg-purple-100">
@@ -24,7 +21,7 @@ const AboutMe: React.FC = () => {
         </h2>
       </div>
       <div className="lg:flex-row flex flex-col py-12">
-        <div className="border-4 border-indigo-200 shadow-md p-6 rounded-l-md">
+        <div className="border-4 border-indigo-200 shadow-md p-6 rounded-l-md py-12">
           <div className="">
             <div className="flex justify-between">
               <h1 className="text-2xl font-bold">
@@ -40,7 +37,7 @@ const AboutMe: React.FC = () => {
               </div>
             </div>
             <h2 className="text-xl font-semibold py-6">
-              I am currently working on Front-End stuff
+              I am currently working on Front-End and a little Back-End stuff
             </h2>
           </div>
           <p className="text-lg font-semibold">
@@ -84,16 +81,43 @@ const AboutMe: React.FC = () => {
               <Image src="/typescript.png" alt="ts" width={40} height={40} />
 
               <Image src="/react_query.png" alt="rq" width={40} height={40} />
-              <Image src="/tailwind.png" alt="tailwind" width={40} height={40} />
+              <Image
+                src="/tailwind.png"
+                alt="tailwind"
+                width={40}
+                height={40}
+              />
             </div>
           </div>
 
-          <div className="p-6">
+          <div className="border-b-4 border-indigo-200 p-6">
             <h2 className="font-semibold text-center">DevOps Stack</h2>
             <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9">
               <Image src="/docker.png" width={40} height={40} />
               <Image src="/k8s.png" width={40} height={40} />
               <Image src="/gcp.png" width={40} height={40} />
+            </div>
+          </div>
+
+          <div className="border-b-4 border-indigo-200 p-6">
+            <h2 className="font-semibold text-center">Back-End Stack</h2>
+            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9">
+              <Image src="/express-js.png" width={40} height={40} />
+              <Image src="/node-js.png" width={40} height={40} />
+            </div>
+          </div>
+
+          <div className="border-b-4 border-indigo-200 p-6">
+            <h2 className="font-semibold text-center">
+              Automation Testing Stack
+            </h2>
+            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9">
+              <Image src="/selenium.png" width={40} height={40} />
+              <Image src="/NUnit.png" width={40} height={40} />
+              <Image src="/restsharp.png" width={40} height={40} />
+              <Image src="/SpecFlow.png" width={40} height={40} />
+              <Image src="/cypress.png" width={40} height={40} />
+              <Image src="/cucumber.png" width={40} height={40} />
             </div>
           </div>
         </div>
@@ -102,6 +126,23 @@ const AboutMe: React.FC = () => {
       <div className="flex lg:flex-row flex-col">
         <div className="border-4 border-indigo-200 shadow-md p-6 rounded-l-md lg:w-1/2 ">
           <h1 className="text-2xl font-bold pb-6">Experience</h1>
+          <div className="border-l border-gray-300 py-6 px-4">
+            <h1 className="font-semibold text-lg job__header relative">
+              Automation Testing Engineer
+            </h1>
+            <h2 className="font-semibold text-indigo-700">
+              Sep 2022 - Present
+            </h2>
+            <p className="text-base font-semibold">
+              Another footstep in my journey, I try myself on another different
+              path at NashTech Vietnam Company. At this place, I have trained
+              how to use different frameworks and technologies by many mentors,
+              and had a chance to participate in a real project. The first
+              time working as a rookie in a company has gained me a lot of experience
+              and taught me better how to fight with heavy pressure.{" "}
+            </p>
+          </div>
+
           <div className="border-l border-gray-300 py-6 px-4">
             <h1 className="font-semibold text-lg job__header relative">
               Front-End Developer, Software Engineer
@@ -121,7 +162,7 @@ const AboutMe: React.FC = () => {
             <h1 className="font-semibold text-lg job__header relative">
               WordPress Developer, Graphic Designer
             </h1>
-            <h2 className="font-semibold text-indigo-700">2020 - Present</h2>
+            <h2 className="font-semibold text-indigo-700">2020 - 2021</h2>
             <p className="text-base font-semibold">
               At the beginning of sophomore, when I can't decide what my path
               that I'm heading to is, I participated in an Web campaign in Green
@@ -141,10 +182,10 @@ const AboutMe: React.FC = () => {
             </h2>
             <p className="text-base font-semibold">
               Since I was in secondary school and highschool, I always handle
-              with most of the Powerpoint presentations in our group or
-              class. So I decided to help making design presentations for my
-              friends. In 2019, I also participated in MOS Powerpoint and got
-              Certificate of Merit.
+              with most of the Powerpoint presentations in our group or class.
+              So I decided to help making design presentations for my friends.
+              In 2019, I also participated in MOS Powerpoint and got Certificate
+              of Merit.
             </p>
           </div>
         </div>
@@ -197,15 +238,10 @@ const AboutMe: React.FC = () => {
         </div>
       </div>
       <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
-          <Modal.Body>
-            <Image
-              src="/CV.png"
-              alt="meipaly"
-              width={1414}
-              height={2000}
-            />
-          </Modal.Body>
-        </Modal>
+        <Modal.Body>
+          <Image src="/CV.png" alt="meipaly" width={1414} height={2000} />
+        </Modal.Body>
+      </Modal>
     </section>
   );
 };
