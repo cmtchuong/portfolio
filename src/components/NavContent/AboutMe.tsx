@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
       <div className="text-center space-y-4">
         <h1 className="font-extrabold text-3xl"> About Me </h1>
         <h2 className="font-semibold text-xl">
-          Web Developer, Software Engineering, Young Learner{" "}
+          Web Developer, Software Engineering, Automation Testing Engineer and Young Learner{" "}
         </h2>
       </div>
       <div className="lg:flex-row flex flex-col py-12">
@@ -37,7 +37,7 @@ const AboutMe: React.FC = () => {
               </div>
             </div>
             <h2 className="text-xl font-semibold py-6">
-              I am currently working on Front-End and a little Back-End stuff
+              I am currently working on Front-End, Automation Testing and a little Back-End stuff
             </h2>
           </div>
           <p className="text-lg font-semibold">
@@ -90,14 +90,7 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
 
-          <div className="border-b-4 border-indigo-200 p-6">
-            <h2 className="font-semibold text-center">DevOps Stack</h2>
-            <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9">
-              <Image src="/docker.png" width={40} height={40} />
-              <Image src="/k8s.png" width={40} height={40} />
-              <Image src="/gcp.png" width={40} height={40} />
-            </div>
-          </div>
+          
 
           <div className="border-b-4 border-indigo-200 p-6">
             <h2 className="font-semibold text-center">Back-End Stack</h2>
@@ -107,7 +100,7 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
 
-          <div className="border-b-4 border-indigo-200 p-6">
+          <div className=" border-indigo-200 p-6">
             <h2 className="font-semibold text-center">
               Automation Testing Stack
             </h2>

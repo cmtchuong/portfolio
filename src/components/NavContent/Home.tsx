@@ -12,7 +12,7 @@ const Home: React.FC = () => {
         "Software Engineer",
         "Web Developer",
         "Designer",
-        "Freelancer",
+        "Automation Testing Engineer",
       ],
       typeSpeed: 40,
       backSpeed: 40,

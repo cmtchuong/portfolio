@@ -153,8 +153,8 @@ li a {
   position: absolute;
   height: 60px;
   width: 60px;
-  border-top: 10px solid blue;
-  border-left: 10px  solid blue;
+  border-top: 10px solid #0d112d;
+  border-left: 10px  solid #0d112d;
   left: 0px;
 
 }
@@ -164,8 +164,8 @@ li a {
   position: absolute;
   height: 60px;
   width: 60px;
-  border-bottom: 10px solid blue;
-  border-right: 10px  solid blue;
+  border-bottom: 10px solid #0d112d;
+  border-right: 10px  solid #0d112d;
   right: 0px;
 
 }
