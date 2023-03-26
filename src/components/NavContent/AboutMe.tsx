@@ -15,9 +15,9 @@ const AboutMe: React.FC = () => {
   return (
     <section className=" min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate bg-purple-100">
       <div className="text-center space-y-4">
-        <h1 className="font-extrabold text-3xl"> About Me </h1>
-        <h2 className="font-semibold text-xl">
-          Web Developer, Software Engineering, Automation Testing Engineer and Young Learner{" "}
+        <h1 className="font-extrabold text-5xl"> About Me </h1>
+        <h2 className="font-semibold text-2xl">
+          Web Developer, Software Engineering, Automation Test Engineer and Young Learner{" "}
         </h2>
       </div>
       <div className="lg:flex-row flex flex-col py-12">

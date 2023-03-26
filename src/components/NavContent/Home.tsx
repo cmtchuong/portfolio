@@ -42,7 +42,7 @@ const Home: React.FC = () => {
           ></img>
         </h1>
         <div className="">
-          <h2 className="text-xl font-semibold">I am working as</h2>
+          <h2 className="text-2xl font-semibold">I am working as</h2>
           <div className="type-wrap">
             <span className="text-base sm:text-3xl font-semibold font__mont text-yellow-700" style={{ whiteSpace: "pre" }} ref={el} />
           </div>

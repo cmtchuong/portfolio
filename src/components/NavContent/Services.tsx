@@ -5,8 +5,8 @@ const Service: React.FC = () => {
   return (
     <section className=" bg-[#002d13] min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate">
       <div className="text-center space-y-4">
-        <h1 className="font-bold text-3xl text-white"> Services </h1>
-        <h2 className="font-semibold text-xl text-white">
+        <h1 className="font-bold text-5xl text-white"> Services </h1>
+        <h2 className="font-semibold text-2xl text-white">
           Simplicity is the ultimate sophistication
         </h2>
       </div>

@@ -26,7 +26,7 @@ const Portfolios: React.FC = () => {
     <>
       <section className=" bg-yellow-50 min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate">
         <div className="text-center space-y-4">
-          <h1 className="font-bold text-3xl"> Some projects I made </h1>
+          <h1 className="font-bold text-5xl"> Some projects I made </h1>
         </div>
 
         <div className="flex flex-col lg:grid lg:grid-cols-3 gap-10  py-14 relative">
