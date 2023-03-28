@@ -15,7 +15,7 @@ const AboutMe: React.FC = () => {
   return (
     <section className=" min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate bg-purple-100">
       <div className="text-center space-y-4">
-        <h1 className="font-extrabold text-5xl"> About Me </h1>
+        <h1 className="font-bold text-5xl"> About Me </h1>
         <h2 className="font-semibold text-2xl">
           Web Developer, Software Engineering, Automation Test Engineer and Young Learner{" "}
         </h2>
@@ -87,6 +87,7 @@ const AboutMe: React.FC = () => {
                 width={40}
                 height={40}
               />
+              <Image src="/ViteJS.png" alt="vite" width={40} height={40} />
             </div>
           </div>
 
