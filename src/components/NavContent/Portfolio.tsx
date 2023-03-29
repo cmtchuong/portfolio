@@ -103,8 +103,8 @@ const Portfolios: React.FC = () => {
             <Image
               src="/meipaly.png"
               alt="meipaly"
-              width={1896}
-              height={8887}
+              width={1200}
+              height={4800}
             />
           </Modal.Body>
         </Modal>
@@ -116,8 +116,8 @@ const Portfolios: React.FC = () => {
             <Image
               src="/mercedes.jpeg"
               alt="meipaly"
-              width={1755}
-              height={6432}
+              width={1200}
+              height={4800}
             />
           </Modal.Body>
         </Modal>
@@ -127,10 +127,11 @@ const Portfolios: React.FC = () => {
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
             <Image 
-            src="/airbnb.png" 
-            alt="airbnb" 
-            width={1898} 
-            height={4734} />
+              src="/airbnb.png" 
+              alt="airbnb" 
+              width={1200} 
+              height={3600} 
+            />
           </Modal.Body>
         </Modal>
       )}
