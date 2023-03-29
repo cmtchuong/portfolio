@@ -369,6 +369,13 @@ li a {
     /* border-radius: 0.5rem; */
   }
 
+  .flip__card__front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
   .flip__card__back {
     color: #fff;
     transform: rotateY(180deg);

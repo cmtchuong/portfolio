@@ -36,10 +36,9 @@ const Portfolios: React.FC = () => {
           >
             <div className="flip__card">
               <div className="flip__card__front">
-                <Image
-                  src="/airbnb.png"
+                <img
+                  src="https://media.discordapp.net/attachments/890493745982767111/1090720765420253254/airbnb.png?width=1518&height=3787"
                   alt="airbnb"
-                  layout="fill"
                   className="object-cover object-top rounded-lg"
                 />
               </div>
@@ -60,10 +59,9 @@ const Portfolios: React.FC = () => {
           >
             <div className="flip__card">
               <div className="flip__card__front">
-                <Image
+                <img
                   src="/mercedes.jpeg"
                   alt="mercedes"
-                  layout="fill"
                   className="object-cover object-top rounded-lg"
                 />
               </div>
@@ -80,10 +78,9 @@ const Portfolios: React.FC = () => {
           >
             <div className="flip__card">
               <div className="flip__card__front">
-                <Image
+                <img
                   src="/meipaly.png"
                   alt="meipaly"
-                  layout="fill"
                   className="object-cover object-top rounded-lg"
                 />
               </div>
@@ -100,7 +97,7 @@ const Portfolios: React.FC = () => {
       {picture == "Meipaly" && (
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
-            <Image
+            <img
               src="/meipaly.png"
               alt="meipaly"
               width={1200}
@@ -113,7 +110,7 @@ const Portfolios: React.FC = () => {
       {picture == "Mercedes" && (
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
-            <Image
+            <img
               src="/mercedes.jpeg"
               alt="meipaly"
               width={1200}
@@ -126,7 +123,7 @@ const Portfolios: React.FC = () => {
       {picture == "Airbnb" && (
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
-            <Image
+            <img
               src="https://media.discordapp.net/attachments/890493745982767111/1090720765420253254/airbnb.png?width=1518&height=3787"
               alt="airbnb"
               width={1518}
