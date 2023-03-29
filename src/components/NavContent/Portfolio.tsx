@@ -126,7 +126,11 @@ const Portfolios: React.FC = () => {
       {picture == "Airbnb" && (
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
-            <Image src="/airbnb.png" alt="airbnb" width={1898} height={4734} />
+            <Image 
+            src="/airbnb.png" 
+            alt="airbnb" 
+            width={1898} 
+            height={4734} />
           </Modal.Body>
         </Modal>
       )}
