@@ -129,8 +129,8 @@ const Portfolios: React.FC = () => {
             <Image
               src="https://media.discordapp.net/attachments/890493745982767111/1090720765420253254/airbnb.png?width=1518&height=3787"
               alt="airbnb"
-              width={1200}
-              height={3600}
+              width={1518}
+              height={3787}
             />
           </Modal.Body>
         </Modal>
