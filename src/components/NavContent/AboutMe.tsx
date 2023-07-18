@@ -17,7 +17,8 @@ const AboutMe: React.FC = () => {
       <div className="text-center space-y-4">
         <h1 className="font-bold text-5xl"> About Me </h1>
         <h2 className="font-semibold text-2xl">
-          Web Developer, Software Engineering, Automation Test Engineer and Young Learner{" "}
+          Web Developer, Software Engineering, Automation Test Engineer and
+          Young Learner{" "}
         </h2>
       </div>
       <div className="lg:flex-row flex flex-col py-12">
@@ -37,7 +38,8 @@ const AboutMe: React.FC = () => {
               </div>
             </div>
             <h2 className="text-xl font-semibold py-6">
-              I am currently working on Front-End, Automation Testing and a little Back-End stuff
+              I am currently working on Automation Testing and a little Back-End
+              stuff
             </h2>
           </div>
           <p className="text-lg font-semibold">
@@ -91,8 +93,6 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
 
-          
-
           <div className="border-b-4 border-indigo-200 p-6">
             <h2 className="font-semibold text-center">Back-End Stack</h2>
             <div className="lg:grid lg:grid-cols-3 py-4 gap-3 gap-y-4 grid grid-cols-6 md:grid md:grid-cols-11 sm:grid sm:grid-cols-9">
@@ -131,9 +131,16 @@ const AboutMe: React.FC = () => {
               Another footstep in my journey, I try myself on another different
               path at NashTech Vietnam Company. At this place, I have trained
               how to use different frameworks and technologies by many mentors,
-              and had a chance to participate in a real project. The first
-              time working as a rookie in a company has gained me a lot of experience
+              and had a chance to participate in a real project. The first time
+              working as a rookie in a company has gained me a lot of experience
               and taught me better how to fight with heavy pressure.{" "}
+            </p>{" "}
+            <p className="text-base font-semibold py-2">
+              {" "}
+              After complete my training in NashTech, I spend months of studying
+              at school to complete my journey at UIT. Then, I finally back to
+              the race as an Automation Tester in BSGV to learn more and push
+              myself further in this role.{" "}
             </p>
           </div>
 
@@ -189,10 +196,10 @@ const AboutMe: React.FC = () => {
           <div className="flex flex-col justify-between h-[92%] border-l border-gray-300">
             <div className="py-6 px-4">
               <h1 className="font-semibold text-lg job__header relative">
-                Unviversity (Post Graduation)
+                Unviversity (Graduated)
               </h1>
               <h2 className="font-semibold text-indigo-700">
-                2019 - First half 2023 (Excepted)
+                2019 - June 2023
               </h2>
               <p className="text-base font-semibold">
                 But the interest won't last long when I somehow feel tired of my

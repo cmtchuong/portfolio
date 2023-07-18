@@ -49,8 +49,8 @@ const Home: React.FC = () => {
         </div>
 
         <p className="text-black font-semibold text-lg py-8 leading-10">
-          A young and enthusiastic developer who always look for new challenges
-          everyday. Currently pushing more in Front-End and also try new things
+          A young and enthusiastic guy who always look for new challenges
+          everyday. Currently pushing in Automation Testing and also try new things
           like Back-End or DevOps stuff...
         </p>
       </div>
