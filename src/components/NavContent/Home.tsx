@@ -34,9 +34,11 @@ const Home: React.FC = () => {
     <section className=" bg-blue-100 min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] flex animate">
       <div className="space-y-2 max-w-[600px] px-4">
         <h1 className="text-2xl font-semibold flex flex-col lg:flex-row">
-          <span className="lg:self-center mr-3 font-bold">Hello, my name is </span>
+          <span className="lg:self-center mr-3 font-bold">
+            Hello, my name is{" "}
+          </span>
           <img
-            src="https://media.discordapp.net/attachments/890493745982767111/994972023161880656/signature.png"
+            src="https://cdn.discordapp.com/attachments/890493745982767111/994972023161880656/signature.png?ex=65f459e8&is=65e1e4e8&hm=fdd420739247f7c4c857260a2b65a846c3e7f20c1cffd0b826e33870acfe6184&"
             className="w-[200px] h-[100px]"
             alt="signature_name"
           ></img>
@@ -44,21 +46,25 @@ const Home: React.FC = () => {
         <div className="">
           <h2 className="text-2xl font-semibold">I am working as</h2>
           <div className="type-wrap">
-            <span className="text-base sm:text-3xl font-semibold font__mont text-yellow-700" style={{ whiteSpace: "pre" }} ref={el} />
+            <span
+              className="text-base sm:text-3xl font-semibold font__mont text-yellow-700"
+              style={{ whiteSpace: "pre" }}
+              ref={el}
+            />
           </div>
         </div>
 
         <p className="text-black font-semibold text-lg py-8 leading-10">
           A young and enthusiastic guy who always look for new challenges
-          everyday. Currently pushing in Automation Testing and also try new things
-          like Back-End or DevOps stuff...
+          everyday. Currently pushing in Automation Testing and also try new
+          things like Back-End or DevOps stuff...
         </p>
       </div>
 
       <div className="profile md:block relative p-10 hidden flex-grow ">
         <img
           src={
-            "https://cdn.discordapp.com/attachments/890493745982767111/994939908244394014/IMG_20180206_121342_303-removebg-preview.png"
+            "https://cdn.discordapp.com/attachments/890493745982767111/994939908244394014/IMG_20180206_121342_303-removebg-preview.png?ex=65f43bff&is=65e1c6ff&hm=f197ba39a4ae872585c355548afc37872fa7a60f79310397b215116901ce7a79&"
           }
           className="profile__image mt-12"
           alt="profile_image"

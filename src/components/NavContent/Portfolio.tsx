@@ -37,7 +37,7 @@ const Portfolios: React.FC = () => {
             <div className="flip__card">
               <div className="flip__card__front">
                 <img
-                  src="https://media.discordapp.net/attachments/890493745982767111/1090720765420253254/airbnb.png?width=1518&height=3787"
+                  src="https://cdn.discordapp.com/attachments/890493745982767111/1090720765420253254/airbnb.png?ex=65fb3a5f&is=65e8c55f&hm=7da04a6429528d55dd59bff68365aa4709fddc20befe4564b807d86b88403cbd&"
                   alt="airbnb"
                   className="object-cover object-top rounded-lg"
                 />
@@ -97,12 +97,7 @@ const Portfolios: React.FC = () => {
       {picture == "Meipaly" && (
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
-            <img
-              src="/meipaly.png"
-              alt="meipaly"
-              width={1200}
-              height={4800}
-            />
+            <img src="/meipaly.png" alt="meipaly" width={1200} height={4800} />
           </Modal.Body>
         </Modal>
       )}
@@ -124,7 +119,7 @@ const Portfolios: React.FC = () => {
         <Modal noPadding open={visible} onClose={closeHandler} blur width="60%">
           <Modal.Body>
             <img
-              src="https://media.discordapp.net/attachments/890493745982767111/1090720765420253254/airbnb.png?width=1518&height=3787"
+              src="https://cdn.discordapp.com/attachments/890493745982767111/1090720765420253254/airbnb.png?ex=65fb3a5f&is=65e8c55f&hm=7da04a6429528d55dd59bff68365aa4709fddc20befe4564b807d86b88403cbd&"
               alt="airbnb"
               width={1518}
               height={3787}
