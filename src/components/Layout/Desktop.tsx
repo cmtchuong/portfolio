@@ -34,28 +34,27 @@ const Desktop: React.FC = () => {
           <title>Mtiezz Space</title>
           <link
             rel="icon"
-            href="https://media.discordapp.net/attachments/890493745982767111/994877103860371476/unknown.png"
+            href="https://cdn.discordapp.com/attachments/890493745982767111/995995590318108732/unknown-removebg-preview.png?ex=65f8132d&is=65e59e2d&hm=25f8dbcd7f4c2f2868f372d8cfe10f67ee66056b5fa9821eb07eb7f3ddf992e3&"
             type="image/x-icon"
           ></link>
         </Head>
-  
+
         <div className="flex">
           {/* Navbar */}
           <div className="sideNav bg-gray-100 w-[280px] h-full fixed top-0 left-0 pl-[40px] pb-[30px] justify-center items-center z-10 xl:block hidden border-r-2">
-
             {/* <div className="right-[-35px] bg-gray-100 top-0 absolute p-2 border border-gray-300 cursor-pointer">
                 <UserIcon className="w-4 h-4" />
             </div> */}
 
             <Image
               src={
-                "https://media.discordapp.net/attachments/890493745982767111/994649389849137212/logocmt-removebg-preview.png"
+                "https://cdn.discordapp.com/attachments/890493745982767111/994649389849137212/logocmt-removebg-preview.png?ex=65fc67ee&is=65e9f2ee&hm=2ae963590461c998e6f0cd9693133fef17a40ec73a3b4f4823e0053ef7492329&"
               }
               alt="Mtiezz Space Logo"
               width={210}
               height={210}
             ></Image>
-  
+
             <ul className="mt-[30px] space-y-[20px] block nav ">
               <div
                 onClick={() => {
@@ -78,7 +77,7 @@ const Desktop: React.FC = () => {
                   </li>
                 )}
               </div>
-  
+
               <div
                 onClick={() => {
                   setNav("AboutMe");
@@ -100,7 +99,7 @@ const Desktop: React.FC = () => {
                   </li>
                 )}
               </div>
-  
+
               <div
                 onClick={() => {
                   setNav("Service");
@@ -122,7 +121,7 @@ const Desktop: React.FC = () => {
                   </li>
                 )}
               </div>
-  
+
               <div
                 onClick={() => {
                   setNav("Portfolio");
@@ -144,7 +143,7 @@ const Desktop: React.FC = () => {
                   </li>
                 )}
               </div>
-  
+
               <div
                 onClick={() => {
                   setNav("Contact");
@@ -167,11 +166,15 @@ const Desktop: React.FC = () => {
                 )}
               </div>
             </ul>
-  
+
             <div className=" py-4">
               <ul className="flex absolute contact__icon left-[22px]">
                 <li>
-                  <a href="https://www.facebook.com/cmtchuong/" className=""  target="_blank">
+                  <a
+                    href="https://www.facebook.com/cmtchuong/"
+                    className=""
+                    target="_blank"
+                  >
                     <i className="fa fa-facebook icon text-center justify-end"></i>
                   </a>
                 </li>
@@ -193,7 +196,7 @@ const Desktop: React.FC = () => {
               </ul>
             </div>
           </div>
-  
+
           <div className="flex-grow">
             {nav === "Home" && <Home />}
             {nav === "AboutMe" && <AboutMe />}
