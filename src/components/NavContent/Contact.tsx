@@ -30,7 +30,7 @@ function sendEmail(e: React.FormEvent<HTMLFormElement>) {
   return (
     <section className=" bg-pink-100 min-h-[100vh]  xl:px-[10%] xl:pl-[25%] sm:px-[40px] py-[6%] animate">
       <div className="text-center space-y-4 pb-20">
-        <h1 className="font-bold text-5xl"> Want to talk with me? </h1>
+        <h1 className="font-bold text-5xl"> Want to have a talk? </h1>
       </div>
 
       <h2 className="font-semibold text-2xl text-center">
