@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             Hello, my name is{" "}
           </span>
           <img
-            src="https://cdn.discordapp.com/attachments/890493745982767111/994972023161880656/signature.png?ex=65f459e8&is=65e1e4e8&hm=fdd420739247f7c4c857260a2b65a846c3e7f20c1cffd0b826e33870acfe6184&"
+            src="/signature.png"
             className="w-[200px] h-[100px]"
             alt="signature_name"
           ></img>
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
       <div className="profile md:block relative p-10 hidden flex-grow ">
         <img
           src={
-            "https://cdn.discordapp.com/attachments/890493745982767111/994939908244394014/IMG_20180206_121342_303-removebg-preview.png?ex=65f43bff&is=65e1c6ff&hm=f197ba39a4ae872585c355548afc37872fa7a60f79310397b215116901ce7a79&"
+            "/profile.png"
           }
           className="profile__image mt-12"
           alt="profile_image"
