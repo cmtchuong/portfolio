@@ -28,11 +28,7 @@ const Mobile: React.FC = () => {
     <Container>
       <Head>
         <title>Mtiezz Space</title>
-        <link
-          rel="icon"
-          href="https://cdn.discordapp.com/attachments/890493745982767111/995995590318108732/unknown-removebg-preview.png?ex=65f8132d&is=65e59e2d&hm=25f8dbcd7f4c2f2868f372d8cfe10f67ee66056b5fa9821eb07eb7f3ddf992e3&"
-          type="image/x-icon"
-        ></link>
+        <link rel="icon" href="/CMTLogo.png" type="image/x-icon"></link>
       </Head>
 
       <div className="">
@@ -42,7 +38,7 @@ const Mobile: React.FC = () => {
           <ul className="text-black flex justify-between bg-gray-100">
             <Image
               src={
-                "https://cdn.discordapp.com/attachments/890493745982767111/995995590318108732/unknown-removebg-preview.png?ex=65f8132d&is=65e59e2d&hm=25f8dbcd7f4c2f2868f372d8cfe10f67ee66056b5fa9821eb07eb7f3ddf992e3&"
+                "/CMTLogoMobile.png"
               }
               alt="Mtiezz Space Logo"
               width={44}

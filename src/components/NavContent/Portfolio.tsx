@@ -37,7 +37,7 @@ const Portfolios: React.FC = () => {
             <div className="flip__card">
               <div className="flip__card__front">
                 <img
-                  src="https://cdn.discordapp.com/attachments/890493745982767111/1090720765420253254/airbnb.png?ex=65fb3a5f&is=65e8c55f&hm=7da04a6429528d55dd59bff68365aa4709fddc20befe4564b807d86b88403cbd&"
+                  src="/airbnb.png"
                   alt="airbnb"
                   className="object-cover object-top rounded-lg"
                 />

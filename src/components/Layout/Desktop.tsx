@@ -32,11 +32,7 @@ const Desktop: React.FC = () => {
       <Container>
         <Head>
           <title>Mtiezz Space</title>
-          <link
-            rel="icon"
-            href="https://cdn.discordapp.com/attachments/890493745982767111/995995590318108732/unknown-removebg-preview.png?ex=65f8132d&is=65e59e2d&hm=25f8dbcd7f4c2f2868f372d8cfe10f67ee66056b5fa9821eb07eb7f3ddf992e3&"
-            type="image/x-icon"
-          ></link>
+          <link rel="icon" href="/CMTLogo.jpg" type="image/x-icon"></link>
         </Head>
 
         <div className="flex">
@@ -47,9 +43,7 @@ const Desktop: React.FC = () => {
             </div> */}
 
             <Image
-              src={
-                "https://cdn.discordapp.com/attachments/890493745982767111/994649389849137212/logocmt-removebg-preview.png?ex=65fc67ee&is=65e9f2ee&hm=2ae963590461c998e6f0cd9693133fef17a40ec73a3b4f4823e0053ef7492329&"
-              }
+              src={"/CMTLogo.png"}
               alt="Mtiezz Space Logo"
               width={210}
               height={210}
